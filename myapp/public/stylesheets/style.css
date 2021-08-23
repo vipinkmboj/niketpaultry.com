@@ -489,6 +489,7 @@ body {
 /* main css*/
 .main .welcome {
   background-color: transparent;
+ 
   max-width: 100%;
   height: auto;
   padding-top: 3.2em;
@@ -501,12 +502,13 @@ body {
   text-align: center;
   padding-bottom: 1.6em;  
   color: rgb(248, 240, 230);  
-  margin: 2.5em auto auto auto;
+  margin: 2em auto auto auto;
 }
 .main .welcome h2 {
   margin: auto;
   text-align: center;
   color: rgb(248, 240, 230);
+  padding-bottom: 1.5em;
 }
 
 .main .welcome .row {

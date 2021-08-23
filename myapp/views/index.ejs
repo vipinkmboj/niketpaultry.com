@@ -2,25 +2,39 @@
   <div class="item2"></div>
 
   <div class="item item3 main">    
-    <div id="homecontent" class="welcome">
+    <div id="homecontent" class="container welcome"><!-- Welcome div starts here-->
+      
       <h1>Niket Paultry</h1>
+      <h2>Just One Call Away</h2>
       <% if(msg != '') { %> 
         <h1 style="color: rgb(248, 240, 230)"> 
           <%= msg %> 
         </h1>  
-      <% } %>
-      <h1>Please Note: Website Under Construction!!!</h1>
-    </div>
+      <% } %>      
+      <h2><a href="tel: +91 9671019523">Order Now</a></h2>
+      <div class="row">           
+        <div class="column column-left">
+          <h3><a href="#" onclick="openSubscribeModal()" style="text-decoration: none;">Subscribe</a></h3>
+        </div>
+        <div class="column column-right">
+          <h3><a href="#" onclick="openContactModal()" style="text-decoration: none;">Write a Message</a></h3>  
+        </div>
+  </div><!--row div ends-->
+    </div> <!-- Welcome div ends here-->
+
+
+
     <div id="aboutcontent">
+      <h2>About</h2>
       <p>
         Niket Paultry is a Paultry Farming Business and Chicken Supply Business. We produce Quality Chicken, whick is one of the best in our area. We provide on demand Whole Sale and Retail supply of Chicken.
       </p>
     </div>
     <div id="servicescontent">
-
+      <h2>Services</h2>
     </div>
     <div id="whyuscontent">
-
+      <h2>Why Us</h2>
     </div>    
   </div>
 
