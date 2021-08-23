@@ -571,10 +571,12 @@ body {
   text-align: center;
   border-bottom: 1px solid rgb(248, 240, 230);
 }
+
 .about h2 {
   margin: auto;
   padding-top: 4.5em;
 }
+
 .about p {
   text-align: left;
   font-size: 1.25em; 
