@@ -4,10 +4,17 @@
   <div class="item item3 main">    
     <div id="homecontent" class="welcome">
       <h1>Niket Paultry</h1>
+      <% if(msg != '') { %> 
+        <h1 style="color: rgb(248, 240, 230)"> 
+          <%= msg %> 
+        </h1>  
+      <% } %>
       <h1>Please Note: Website Under Construction!!!</h1>
     </div>
     <div id="aboutcontent">
-
+      <p>
+        Niket Paultry is a Paul
+      </p>
     </div>
     <div id="servicescontent">
 
@@ -16,4 +23,6 @@
 
     </div>    
   </div>
+
+<%- include('modal') %>
 <%- include('footer') %>

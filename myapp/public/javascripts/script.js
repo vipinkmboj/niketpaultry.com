@@ -257,38 +257,6 @@ function openAgreementModal() {
 
 //Agreement modal javascript ends here
 
-// contact modal javascript starts here
-//open contact modal when Contact button is clicked
-function openContactModal() {
-    var parentModalContact = document.querySelector('.modal-parent-contact');
-    parentModalContact.style.display = 'block';
-    parentModalSignin.style.display = 'none';
-    parentModalSignup.style.display = 'none';
-    //closing sidenav when contact is clicked
-    sidenavParent.style.width = '0';
-    sideNav.style.width = '0';
-    iconBarButton.style.display = 'block';
-    //Scroll to top
-    document.body.scrollTop = 0; //For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-
-}
-
-//close contat modal when Cross or Cancel button is clicked
-function closeContactModal() {
-    var parentModalContact = document.querySelector('.modal-parent-contact');
-    parentModalContact.style.display = 'none';
-}
-//close contat modal when outside window is clicked
-var parentModalContact = document.querySelector('.modal-parent-contact');
-parentModalContact.addEventListener('click', closeContactModalforWindow);
-
-function closeContactModalforWindow(e) {
-    if(e.target.className == 'modal-parent-contact') {
-        parentModalContact.style.display = 'none';  
-    }
-}
-// contact modal javascript ends here
 
 // Upload Profile Image modal javascript starts here
 //open Upload Profile Image modal when Contact button is clicked
@@ -889,3 +857,76 @@ function showPassword() {
                 
             */
                 
+
+
+
+
+
+
+
+// contact modal javascript starts here
+//open contact modal when Contact button is clicked
+function openContactModal() {
+    var parentModalContact = document.querySelector('.modal-parent-contact');
+    parentModalContact.style.display = 'block';
+    parentModalSignin.style.display = 'none';
+    parentModalSignup.style.display = 'none';
+    //closing sidenav when contact is clicked
+    sidenavParent.style.width = '0';
+    sideNav.style.width = '0';
+    iconBarButton.style.display = 'block';
+    //Scroll to top
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+}
+
+//close contact modal when Cross or Cancel button is clicked
+function closeContactModal() {
+    var parentModalContact = document.querySelector('.modal-parent-contact');
+    parentModalContact.style.display = 'none';
+}
+//close contact modal when outside window is clicked
+var parentModalContact = document.querySelector('.modal-parent-contact');
+parentModalContact.addEventListener('click', closeContactModalforWindow);
+
+function closeContactModalforWindow(e) {
+    if(e.target.className == 'modal-parent-contact') {
+        parentModalContact.style.display = 'none';  
+    }
+}
+// contact modal javascript ends here
+
+// Subscribe modal javascript starts here
+//open Subscribe modal when Contact button is clicked
+function openSubscribeModal() {
+    var parentModalSubscribe = document.querySelector('.modal-parent-subscribe');
+    parentModalSubscribe.style.display = 'block';
+    parentModalContact.style.display = 'none';
+    
+    
+    //closing sidenav when contact is clicked
+    sidenavParent.style.width = '0';
+    sideNav.style.width = '0';
+    iconBarButton.style.display = 'block';
+    //Scroll to top
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+}
+
+//close subscribe modal when Cross or Cancel button is clicked
+function closeSubscribeModal() {
+    var parentModalSubscribe = document.querySelector('.modal-parent-subscribe');
+    parentModalSubscribe.style.display = 'none';
+}
+//close subscribe modal when outside window is clicked
+var parentModalSubscribe = document.querySelector('.modal-parent-subscribe');
+parentModalSubscribe.addEventListener('click', closeSubscribeModalforWindow);
+
+function closeSubscribeModalforWindow(e) {
+    if(e.target.className == 'modal-parent-subscribe') {
+        parentModalSubscribe.style.display = 'none';  
+    }
+}
+// Subscribe modal javascript ends here

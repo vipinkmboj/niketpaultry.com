@@ -1,0 +1,49 @@
+<!--Contact Us Modal starts here-->
+                  
+<div class="modal-parent-contact">
+    <div class="modal-contact">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <form action="/contact" method="post" role="form">
+          <label for="firstname">First Name</label><br/>
+          <input name="firstname" type="text" placeholder="Enter Your First Name..." required/><br/><br/>
+          <label for="lastname">Last Name</label><br/>
+          <input name="lastname" type="text" placeholder="Enter Your Last Name..." required/><br/><br/>
+          <label for="mobilenumber">Mobile Number</label><br/>
+          <input name="mobilenumber" type="tel" placeholder="Enter Your Mobile Number..." required/><br/><br/>
+          <label for="email">Email</label><br/>
+          <input name="email" type="email" placeholder="Enter Your Email id..." optional/><br/><br/>
+          <label>Write Message</label><br/>
+          <textarea name="writemessage" type="text" placeholder="Enter Your Message here...">
+
+          </textarea><br/><br/>
+          <div class="modal-button">
+            <button type="submit">Submit</button><button type="button" onclick="closeContactModal()">Cancel</button><br/><br/>
+          </div>
+          
+          <div class="modal-anchor-tags">
+            <span>Mobile: <a href="tel: +919671019523">+91 9671019523</a></span>
+          </div>
+                          
+        </form>
+        <span class="X-contact" onclick="closeContactModal()">&times;</span>
+    </div>
+  </div>
+  <!--Contact Modal ends here-->
+
+  <!--Subscribe Modal starts here-->
+                  
+<div class="modal-parent-subscribe">
+    <div class="modal-subscribe">
+        <h1 style="text-align: center;">Subscribe</h1>
+        <form action="/subscribe" method="post" role="form">
+          <label for="email">Email</label><br/>
+          <input name="email" type="email" placeholder="Enter Your Email id..." optional/><br/><br/>
+         
+          <div class="modal-button">
+            <button type="submit">Subscribe</button><button type="button" onclick="closeSubscribeModal()">Cancel</button><br/><br/>
+          </div>                         
+        </form>
+        <span class="X-subscribe" onclick="closeSubscribeModal()">&times;</span>
+    </div>
+  </div>
+  <!--Subscribe Modal ends here-->
