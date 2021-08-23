@@ -868,13 +868,15 @@ function showPassword() {
 //open contact modal when Contact button is clicked
 function openContactModal() {
     var parentModalContact = document.querySelector('.modal-parent-contact');
+    var sidenavParent = document.getElementsByClassName('sidenav-parent')[0];
+    var sideNav = document.getElementsByClassName('sidenav')[0];
     parentModalContact.style.display = 'block';
     parentModalSignin.style.display = 'none';
     parentModalSignup.style.display = 'none';
     //closing sidenav when contact is clicked
     sidenavParent.style.width = '0';
     sideNav.style.width = '0';
-    iconBarButton.style.display = 'block';
+    //iconBarButton.style.display = 'block';
     //Scroll to top
     document.body.scrollTop = 0; //For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -887,7 +889,7 @@ function closeContactModal() {
     parentModalContact.style.display = 'none';
 }
 //close contact modal when outside window is clicked
-var parentModalContact = document.querySelector('.modal-parent-contact');
+var parentModalContact = document.querySelector('modal-parent-contact');
 parentModalContact.addEventListener('click', closeContactModalforWindow);
 
 function closeContactModalforWindow(e) {
@@ -901,6 +903,8 @@ function closeContactModalforWindow(e) {
 //open Subscribe modal when Contact button is clicked
 function openSubscribeModal() {
     var parentModalSubscribe = document.querySelector('.modal-parent-subscribe');
+    var sidenavParent = document.getElementsByClassName('sidenav-parent')[0];
+    var sideNav = document.getElementsByClassName('sidenav')[0];
     parentModalSubscribe.style.display = 'block';
     parentModalContact.style.display = 'none';
     
@@ -908,7 +912,7 @@ function openSubscribeModal() {
     //closing sidenav when contact is clicked
     sidenavParent.style.width = '0';
     sideNav.style.width = '0';
-    iconBarButton.style.display = 'block';
+    //iconBarButton.style.display = 'block';
     //Scroll to top
     document.body.scrollTop = 0; //For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
