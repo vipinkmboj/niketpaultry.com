@@ -226,10 +226,12 @@ body {
 }
 /*iconbar css ends*/
 /* brand-title css starts*/
+/*
 .item1 .brand-title img {
   width: 220px;
   height: 75px;
 }
+*/
 .item1 .brand-title {
   
   position: absolute;
@@ -247,10 +249,12 @@ body {
 }
 
 @media only screen and (min-width: 180px) and (max-width: 280px) {
+ /*
   .item1 .brand-title img {
     width: 150px;
     height: 60px;
   }
+  */
 
   .item1 .brand-title {
     position: absolute;
@@ -273,10 +277,12 @@ body {
     color: rgb(248, 240, 230);
     
   } 
+  /*
   .item1 .brand-title img {
     width: 180px;
     height: 75px;
   }
+  */
   .item1 .brand-title {
     position: absolute;
     top: .6em;
@@ -297,10 +303,12 @@ body {
     color: rgb(248, 240, 230);
     
   } 
+  /*
   .item1 .brand-title img {
     width: 250px;
     height: 75px;
   }
+  */
   .item1 .brand-title {
     position: absolute;
     top: .6em;
