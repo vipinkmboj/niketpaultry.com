@@ -684,6 +684,71 @@ body {
 
 }
 
+.opportunities form{
+  text-align: left;
+  width: 90%;
+  padding: 2%;
+  font-size: 1.8em;
+}
+.opportunities form label {
+  margin: 1em auto 1em auto;
+}
+.opportunities form .person-detail {
+  width: 50%;
+  background-color: transparent;
+  border: 3px solid rgb(248, 240, 230);
+  border-radius: 8px;
+  outline: none; 
+  padding: .5em;
+}
+
+.opportunities form .radio-class {
+  margin-right: 2em;
+}
+
+.opportunities form textarea {
+  max-width: 50%;
+  background-color: transparent;
+  border: 3px solid rgb(248, 240, 230);
+  border-radius: 8px;
+  outline: none; 
+  padding: .5em;
+}
+.opportunities form .submit-button {
+  width: 20%;
+  background-color: transparent;
+  border: 3px solid rgb(248, 240, 230);
+  border-radius: 8px;
+  outline: none; 
+  padding: .5em;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .opportunities form{
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    font-size: 1.2em;
+  }
+  .opportunities form label {
+    margin: 1em auto 1em auto;
+  }
+  .opportunities form .person-detail {
+    width: 100%;
+    
+  }
+  
+  .opportunities form .radio-class {
+    margin-right: 2em;
+  }
+  
+  .opportunities form .submit-button {
+    width: 100%;
+    
+  }
+  
+}
 /* templates css* ends*/
 .class-img {
   width: 100%;

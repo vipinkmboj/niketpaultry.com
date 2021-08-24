@@ -1,0 +1,39 @@
+<%- include('header')  %>
+  <div class="item2"></div>
+
+  <div class="item item3 main">    
+    <div id="homecontent" class="container welcome opportunities"><!-- Welcome div starts here-->
+      <h1>Opportunities</h1>
+      
+      <% if(msg != '') { %> 
+        <h1 style="color: rgb(248, 240, 230)"> 
+          <%= msg %> 
+        </h1>  
+      <% } %> 
+      <form action="/opportunities" method="POST" role="form">
+        <label>Full Name</label><br/>
+        <input class="person-detail" type="text" name="fullname"/><br/>
+        <label>Mobile</label><br/>
+        <input class="person-detail" type="text" name="mobilenumber"/><br/>
+        <label>Email</label><br/>
+        <input class="person-detail" type="text" name="email"/><br/>
+
+        <input class="radio-class" type="radio" name="opportunities" value="I want to become your Commission Agent."/><label>I want to become your Commission Agent.</label><br/>
+        <input class="radio-class" type="radio" name="opportunities" value="I want to become your Retail Seller."/><label>I want to become your Retail Seller.</label><br/>
+        <input class="radio-class" type="radio" name="opportunities" value="I want to become your Partner."/><label>I want to become your Partner.</label><br/>
+        <input class="radio-class" type="radio" name="opportunities" value="I want to become your Driver."/><label>I want to become your Driver.</label><br/>
+        <input class="radio-class" type="radio" name="opportunities" value="I want to become your Helper."/><label>I want to become your Helper.</label><br/><br/>
+        
+        <input class="submit-button" type="submit" value="Submit"/>
+      </form>
+   
+    </div> <!-- Welcome div ends here-->
+
+
+
+    
+    
+  </div>
+
+<%- include('modal') %>
+<%- include('footer') %>

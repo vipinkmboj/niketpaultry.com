@@ -57,40 +57,5 @@ router.post('/subscribe', function(req, res, next) {
 
   });
   });
-/*
-router.post('/contact', function(req, res, next) {
-  var contactDetail = new contactModel({
-    Firstname: req.body.firstname,
-    Lastname: req.body.lastname,
-    Mobilenumber: req.body.mobilenumber,
-    Email: req.body.email,
-    WriteMessage: req.body.writemessage
-  });
-  contactDetail.save((err) => {
-    
-    if(err) {
-      res.render('index', { title: 'Niket Paultry', msg:'Error Occurred, Please Try again...'});
-    }
-    
-    res.render('index', { title: 'Niket Paultry', msg:'Message Submited Successfully, You will be contacted soon'});
-  });  
-});
-
-
-/*
-router.post('/subscribe', function(req, res, next) {
-  var subscribeDetail = new contactModel({   
-    Email: req.body.email    
-  });
-  subscribeDetail.save((err) => {
-    
-    if(err) {
-      res.render('index', { title: 'Niket Paultry', msg:'Error Occurred, Please Try again...'});
-    }
-    
-    res.render('index', { title: 'Niket Paultry', msg:'Subscribed Successfully, You will get frquent email notifications'});
-  });  
-});
-*/
 
 module.exports = router;
