@@ -428,7 +428,7 @@ body {
 }
 .footer .row .column-social-media{
   
-  width: 100%; 
+  width: 90%; 
   height: auto; 
   margin: auto;
   color: rgb(248, 240, 230);
@@ -464,11 +464,9 @@ body {
   .footer .row {
     display: block;
   }
-  .footer .row .column-1, .footer .row .column-2 {
-    
+  .footer .row .column-1, .footer .row .column-2 {    
     width: 90%; 
 } 
-  
 }
 /* footer css ends */
 
