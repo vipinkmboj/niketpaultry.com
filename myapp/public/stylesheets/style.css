@@ -389,16 +389,15 @@ body {
 
 /* footer css starts*/
 .footer {
-  /* 
+  
   width: 100%;
-  height: auto;
-  */
+  height: auto;  
   background-color: transparent;
   /*background-color: rgb(235, 98, 98);*/
   color: rgb(248, 240, 230);  
   /*margin-top: 3.8em;*/
   margin-bottom: 0;  
-  padding: 1em;  
+  padding: 2em;  
 }
 .footer #taptotopButton {
   width: 100%;
@@ -416,26 +415,30 @@ body {
   display: flex; 
   width: 100%; 
   height: auto;
+  margin: auto;
 }
 
 .footer .row .column {
   width: 45%; 
+  height: auto;
   margin: auto; 
   color: rgb(248, 240, 230);
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-align: center;
 }
 .footer .row .column-social-media{
   
-  width: 90%;  
+  width: 100%; 
+  height: auto; 
   margin: auto;
   color: rgb(248, 240, 230);
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-align: center;
 }
 .footer .row .column-1 ul {  
   text-align: left;  
   padding-left: 30%;
+  margin: auto;
 }
 .footer .row .column-1 ul li {
   list-style: none;
@@ -453,21 +456,18 @@ body {
   list-style: none;
 }
 .footer .row .column-social-media a {
-
   padding: 5%;
   text-decoration: none;
   
 }
-
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 768px) {
   .footer .row {
     display: block;
-     
   }
-  .footer .row .column {    
-    width: 100%; 
+  .footer .row .column-1, .footer .row .column-2 {
     
-  }
+    width: 90%; 
+} 
   
 }
 /* footer css ends */
