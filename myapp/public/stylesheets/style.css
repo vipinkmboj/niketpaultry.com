@@ -456,7 +456,12 @@ body {
   list-style: none;
 }
 .footer .row .column-social-media a {
-  padding: 5%;
+  
+  text-decoration: none;
+  
+}
+.footer .row .column-social-media #twiter-anchor {
+  padding: 7%;
   text-decoration: none;
   
 }
