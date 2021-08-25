@@ -426,14 +426,13 @@ body {
   font-size: 1.5em;
   text-align: center;
 }
-.footer .row .column-social-media{
-  
+.footer .row .column-social-media{  
   width: 90%; 
-  height: auto; 
-  margin: auto;
+  height: auto;  
   color: rgb(248, 240, 230);
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.5em;  
+  display: flex;
+  justify-content: space-evenly;
 }
 .footer .row .column-1 ul {  
   text-align: left;  
@@ -456,15 +455,12 @@ body {
   list-style: none;
 }
 .footer .row .column-social-media a {
-  
+ /* padding: 5%;*/
   text-decoration: none;
   
-}
-.footer .row .column-social-media #twiter-anchor {
-  padding: 7%;
-  text-decoration: none;
   
 }
+
 @media only screen and (min-width: 280px) and (max-width: 768px) {
   .footer .row {
     display: block;
